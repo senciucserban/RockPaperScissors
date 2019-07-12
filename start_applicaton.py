@@ -1,3 +1,5 @@
+import os
+
 from GUI.GUI import GUI
 from Controller.Controller import Controller
 from Repository.Repository import Repository
@@ -5,7 +7,7 @@ from tkinter import *
 from tkinter import messagebox
 
 try:
-    repo = Repository('Data\Data.in')
+    repo = Repository(os.path.join('Data', 'Data.in'))
     ctrl = Controller(repo)
     root = Tk()
     gui = GUI(root, ctrl)
