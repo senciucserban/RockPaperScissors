@@ -1,10 +1,11 @@
+#!/usr/bin/env python
 import os
-
-from GUI.GUI import GUI
-from Controller.Controller import Controller
-from Repository.Repository import Repository
 from tkinter import *
 from tkinter import messagebox
+
+from GUI.GUI import GUI
+from controller.controller import Controller
+from repository.repository import Repository
 
 try:
     repo = Repository(os.path.join('Data', 'Data.in'))

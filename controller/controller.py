@@ -70,4 +70,3 @@ class Controller:
         :param attr: String
         """
         self.__repo.save(attr)
-

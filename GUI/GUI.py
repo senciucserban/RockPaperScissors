@@ -68,7 +68,8 @@ class GUI:
             self.__reload_score()
 
     def __reload_score(self):
-        Label(self.__master, text='Wins: %s | Draws: %s | Loses: %s' % (self.__wins, self.__draws, self.__loses)).grid(row=3, columnspan=3, sticky='WE')
+        text = f'Wins: {self.__wins} | Draws: {self.__draws} | Loses: {self.__loses}'
+        Label(self.__master, text=text).grid(row=3, columnspan=3, sticky='WE')
 
     def __run_app(self, choice):
         if self.__ctrl.decision(choice) == 0:
